@@ -1,0 +1,122 @@
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: #bed8ee;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #0188ff;
+}
+
+ul
+{
+    margin: 20px;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+li
+{
+    height: 200px;
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+
+li:hover
+{
+    /*height: 250px;
+    margin: 20px 20px 20px 0px;*/
+    transform: scale(1.2);
+}
+
+li img
+{
+    height: 100%;
+    border-radius: 15px;
+}
+
+li
+{
+    margin: 20px 20px 20px 50px;
+    text-align: center;
+}
+
+header
+{
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    border-bottom: 5px solid #0188ff;
+}
+
+footer
+{
+    background-color: aliceblue;
+    padding: 10px;
+    margin-top: 10px;
+} 
+
+@media screen and (max-width: 700px)
+{
+    header h1
+    {
+        font-size: 20px;
+        font-weight: initial;
+    }
+
+    header
+    {
+        height: 60px;
+    }
+
+    footer
+    {
+        font-size: 12px;
+    }
+
+    ul
+    {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    li
+    {
+        
+        margin: 0;
+        padding: 0;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 437px)
+{
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 175px);
+    }
+    body
+    {
+        text-align: center;
+    }
+}
